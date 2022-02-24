@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Lucida Console", "Courier New", monospace;
+  background-color: #698c43;
+}
+
+.flexParent1, .flexParent2 {
+  display: flex;
+}
+
+.mainContainer .flexParent1 {
+  justify-content: center;
+}
+
+.flexParent1 div h1 {
+  font-size: 100px;
+  color: #123004;
+}
+
+.flexParent2 div {
+  background-color: #d2d6ce;
+  margin: 16px;
+  padding: 16px;
+}
+
+
+
+.flexParent2 > div {
+  background-color: #8ba66c;
+}
+
+.imgContainer > div > p {
+  color: "red";
+
+}
+
+.flexParent2 > div > p:first-child {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+p + p {
+  margin-top: 15px;
+}
+
+.imgContainer {
+  display: flex;
+}
+
+.imgContainer div * {
+  width: 100%;
+}
+
+
+a, a:visited, a:active {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 30px;
+  color: #6933d4;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #3ed433;
+  font-size: 60px;
+}
